@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
+<meta name="author" content="Sterling Holt">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
+<title>National Park</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,6 +16,9 @@
 
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
 
@@ -23,33 +26,62 @@
 </head>
 <body>
 <!-- HEADER HERE -->
+<div id="headerWrapper">
 	<header>
- <h1>Company Name Here</h1>
-        <h2>Possible Slogan or Tagline</h2>
+ <h1>National Park</h1>
+        <h2>Adventure of a Lifetime</h2>
     </header>
+</div>
     
     
 <!-- NAVIGATION HERE -->
+<div id="navWrapper">
     <nav class="clearfix">
-        <ul >
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
+        <button id="hamburgerButton">&#9776;</button>
+        <ul id="primaryNav">
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">Sites</a></li>
+            <li><a href="#">Donate</a></li>
+            <li class="active"><a href="#">Animals</a></li>    
         </ul>
     </nav>
+</div>
     
     
 <!-- CONTENT HERE -->
+<div id="mainWrapper">
     <main>
         <h1>Products</h1>
-        <p>The page name should almost exactly match the menu item. </p>
+        <div class="cardDeck">
+            <div class="card">
+                <section>Grizzly Bear</section>
+                <img src="images/bear-face.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque nibh, porttitor commodo enim eget, rhoncus vestibulum dui. Etiam maximus hendrerit mauris, at iaculis mauris aliquet sed.</p>
+                <a href="#">Learn More Stuff</a>
+            </div><!--End of Card-->
+            <div class="card">
+                <section>Panda</section>
+                <img src="images/panda.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque nibh, porttitor commodo enim eget, rhoncus vestibulum dui. Etiam maximus hendrerit mauris, at iaculis mauris aliquet sed.</p>
+                <a href="#">Learn More Stuff</a>
+            </div><!--End of Card-->
+            <div class="card">
+                <section>Hippo</section>
+                <img src="images/hippo.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque nibh, porttitor commodo enim eget, rhoncus vestibulum dui. Etiam maximus hendrerit mauris, at iaculis mauris aliquet sed.</p>
+                <a href="#">Learn More Stuff</a>
+            </div><!--End of Card-->
+
+        </div>
     </main>
+</div>
     
 <!-- FOOTER HERE -->   
+<div id="footerWrapper">
     <footer>
-        &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
+        &copy; 2022 &bull; Sterling Holt &bull; Login
     </footer>
-
+</div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
