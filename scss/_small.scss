@@ -19,10 +19,15 @@ div#headerWrapper {
 }
 header {
     padding: .5rem 2%;
+}
+header h1 {
+    margin: 0;
     color: crimson;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h2 {
+    margin: 0; font-weight: normal;
+    color: crimson;
+}
 
 /*----------- NAVIGATION --------------*/
 div#navWrapper {
